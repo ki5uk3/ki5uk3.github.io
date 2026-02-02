@@ -11,16 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
 
-
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KP12E3Z1M6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KP12E3Z1M6');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KP12E3Z1M6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KP12E3Z1M6');
+    </script>
 
     <script>
         tailwind.config = {
@@ -47,7 +45,6 @@
             color: #a3a3a3;
         }
         
-        /* Custom scrollbar for webkit */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -62,7 +59,6 @@
             background: #404040;
         }
 
-        /* Accordion Animation */
         details > summary {
             list-style: none;
         }
@@ -101,7 +97,6 @@
 
     <main class="w-full max-w-2xl mx-auto space-y-12">
         
-        <!-- Header Section -->
         <header class="text-center space-y-6 py-4 animate-fade-in">
             <h1 class="font-mono text-xl sm:text-2xl md:text-3xl font-light tracking-wide text-neutral-500">
                 <span class="text-heading font-normal">create</span>,
@@ -114,25 +109,9 @@
             </p>
         </header>
 
-        <!-- Divider -->
         <div class="h-px w-full max-w-[100px] mx-auto bg-gradient-to-r from-transparent via-neutral-800 to-transparent"></div>
 
-        <!-- Content Sections -->
         <div class="space-y-4">
-
-            <!-- Thoughts / Journal (Hidden from view, present in source) -->
-            <!--
-            <details class="group bg-surface/30 border border-neutral-800 rounded-lg overflow-hidden transition-colors hover:border-neutral-700">
-                <summary class="flex items-center justify-between p-4 cursor-pointer select-none">
-                    <span class="font-mono text-sm text-heading uppercase tracking-wider">Stream of Consciousness</span>
-                    <i data-lucide="book-open" class="w-4 h-4 text-neutral-500 group-open:text-heading transition-colors"></i>
-                </summary>
-                <div class="p-6 pt-2 border-t border-neutral-800/50 text-sm leading-relaxed space-y-4 font-serif text-neutral-400">
-                    <p>There’s so much to talk about, but what’s the point? Like, does it even matter? We all live—for ourselves, for our future, for getting rich, for checking off our bucket lists, for traveling, for experiences, or just to figure out where we stand as humans. When I look at the stars at night, all I see are dots. Those dots—and honestly—they make me wonder: does anything even matter? The truth is, it doesn’t. You’re born, you live, and you die.</p>
-                    <p class="text-heading italic">In the end, either Life will end you, or Love will resurrect you.</p>
-                </div>
-            </details>
-            -->
 
             <!-- Films Section -->
             <details class="group bg-surface/30 border border-neutral-800 rounded-lg overflow-hidden transition-colors hover:border-neutral-700">
@@ -143,7 +122,6 @@
                 <div class="p-6 pt-2 border-t border-neutral-800/50">
                     <p class="mb-6 text-sm italic opacity-70">"Films, my escape from reality."</p>
                     <ul id="film-list" class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                        <!-- Original List -->
                         <li><a href="https://letterboxd.com/film/chungking-express/" target="_blank" class="hover:text-heading transition-colors duration-200">Chungking Express (1994)</a></li>
                         <li><a href="https://letterboxd.com/film/fallen-angels/" target="_blank" class="hover:text-heading transition-colors duration-200">Fallen Angels (1995)</a></li>
                         <li><a href="https://letterboxd.com/film/trainspotting/" target="_blank" class="hover:text-heading transition-colors duration-200">Trainspotting (1996)</a></li>
@@ -285,36 +263,42 @@
                     <span class="font-mono text-sm text-heading uppercase tracking-wider">Music I Produce</span>
                     <i data-lucide="mic-2" class="w-4 h-4 text-neutral-500 group-open:text-heading transition-colors"></i>
                 </summary>
-                <div class="p-6 pt-2 border-t border-neutral-800/50">
+                <div class="p-6 pt-2 border-t border-neutral-800/50 space-y-6">
+                    <!-- SoundCloud Embed -->
                     <div class="rounded-lg overflow-hidden border border-neutral-800 bg-black">
-                        <!-- SoundCloud Embed -->
                         <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2149367921&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                         <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100; padding: 10px;">
                             <a href="https://soundcloud.com/d0rking" title="Dorking" target="_blank" style="color: #cccccc; text-decoration: none;">Dorking</a> · <a href="https://soundcloud.com/d0rking/sets/one-night-in-mongkok" title="One Night in Mongkok" target="_blank" style="color: #cccccc; text-decoration: none;">One Night in Mongkok</a>
                         </div>
+                    </div>
+
+                    <!-- Spotify Embed -->
+                    <div class="rounded-xl overflow-hidden border border-neutral-800 bg-black">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1fc0TIWSrdIrNPSnlTSWQS?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
                 </div>
             </details>
 
         </div>
 
-        <!-- Footer / Links -->
         <footer class="pt-8 pb-12">
             <div class="flex flex-col items-center gap-6">
                 <div class="flex gap-8 text-sm font-mono">
-                    <a href="https://i.postimg.cc/3wRb1JZT/image.png" class="flex items-center gap-2 hover:text-heading transition-colors link-hover">
+                    <a href="https://i.postimg.cc/3wRb1JZT/image.png" target="_blank" class="flex items-center gap-2 hover:text-heading transition-colors link-hover">
                         <i data-lucide="mail" class="w-4 h-4"></i> Email
+                    </a>
+                    <a href="https://pastebin.com/raw/6YHrTMbT" target="_blank" class="flex items-center gap-2 hover:text-heading transition-colors link-hover">
+                        <i data-lucide="shield" class="w-4 h-4"></i> Privacy Policy
                     </a>
                 </div>
                 
-                <span class="font-mono text-xs text-neutral-600">- unr</span>
+                <span class="font-mono text-xs text-neutral-600">- Dorking</span>
             </div>
         </footer>
 
     </main>
 
     <script>
-        // Initialize Icons safely after load
         window.addEventListener('load', () => {
             if (window.lucide) {
                 lucide.createIcons();

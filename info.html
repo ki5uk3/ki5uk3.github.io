@@ -1,307 +1,87 @@
-
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5331781010653855"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>create, explore, expand, conquer.</title>
-    <meta name="description" content="Personal website and archive">
+    <title>Contact</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KP12E3Z1M6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-KP12E3Z1M6');
-    </script>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                    },
-                    colors: {
-                        bg: '#0a0a0a',
-                        surface: '#171717',
-                        text: '#a3a3a3',
-                        heading: '#e5e5e5',
-                        accent: '#d4d4d4'
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        body {
-            background-color: #0a0a0a;
-            color: #a3a3a3;
-        }
-        
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0a0a0a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #262626;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #404040;
-        }
-
-        details > summary {
-            list-style: none;
-        }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-        details[open] summary ~ * {
-            animation: fadeIn 0.3s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(-5px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        .link-hover {
-            position: relative;
-            text-decoration: none;
-        }
-        .link-hover::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 1px;
-            bottom: -2px;
-            left: 0;
-            background-color: currentColor;
-            transition: width 0.3s ease;
-        }
-        .link-hover:hover::after {
-            width: 100%;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hide-scroll::-webkit-scrollbar { display: none; }
     </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col items-center justify-center p-6 sm:p-12">
+<body class="bg-neutral-950 text-neutral-400 flex flex-col min-h-screen p-6 overflow-hidden">
 
-    <main class="w-full max-w-2xl mx-auto space-y-12">
-        
-        <header class="text-center space-y-6 py-4 animate-fade-in">
-            <h1 class="font-mono text-xl sm:text-2xl md:text-3xl font-light tracking-wide text-neutral-500">
-                <span class="text-heading font-normal">create</span>,
-                <span class="text-heading font-normal">explore</span>,
-                <span class="text-heading font-normal">expand</span>,
-                <span class="text-heading font-normal">conquer</span><span class="text-heading animate-pulse">_</span>
-            </h1>
-            <p class="font-mono text-xs text-neutral-600 tracking-widest uppercase opacity-60">
-                Archive & Personal Site
-            </p>
-        </header>
-
-        <div class="h-px w-full max-w-[100px] mx-auto bg-gradient-to-r from-transparent via-neutral-800 to-transparent"></div>
-
-        <div class="space-y-4">
-
-            <!-- Films Section -->
-            <details class="group bg-surface/30 border border-neutral-800 rounded-lg overflow-hidden transition-colors hover:border-neutral-700">
-                <summary class="flex items-center justify-between p-4 cursor-pointer select-none">
-                    <span class="font-mono text-sm text-heading uppercase tracking-wider">Films</span>
-                    <i data-lucide="film" class="w-4 h-4 text-neutral-500 group-open:text-heading transition-colors"></i>
-                </summary>
-                <div class="p-6 pt-2 border-t border-neutral-800/50">
-                    <p class="mb-6 text-sm italic opacity-70">"Films, my escape from reality."</p>
-                    <ul id="film-list" class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                        <li><a href="https://letterboxd.com/film/chungking-express/" target="_blank" class="hover:text-heading transition-colors duration-200">Chungking Express (1994)</a></li>
-                        <li><a href="https://letterboxd.com/film/fallen-angels/" target="_blank" class="hover:text-heading transition-colors duration-200">Fallen Angels (1995)</a></li>
-                        <li><a href="https://letterboxd.com/film/trainspotting/" target="_blank" class="hover:text-heading transition-colors duration-200">Trainspotting (1996)</a></li>
-                        <li><a href="https://letterboxd.com/film/buffalo-66/" target="_blank" class="hover:text-heading transition-colors duration-200">Buffalo '66 (1998)</a></li>
-                        <li><a href="https://letterboxd.com/film/fargo/" target="_blank" class="hover:text-heading transition-colors duration-200">Fargo (1996)</a></li>
-                        <li><a href="https://letterboxd.com/film/salaam-bombay/" target="_blank" class="hover:text-heading transition-colors duration-200">Salaam Bombay! (1988)</a></li>
-                        <li><a href="https://letterboxd.com/film/snatch/" target="_blank" class="hover:text-heading transition-colors duration-200">Snatch (2000)</a></li>
-                        <li><a href="https://letterboxd.com/film/anand/" target="_blank" class="hover:text-heading transition-colors duration-200">Anand (1971)</a></li>
-                        <li><a href="https://letterboxd.com/film/blade-runner/" target="_blank" class="hover:text-heading transition-colors duration-200">Blade Runner (1982)</a></li>
-                        <li><a href="https://letterboxd.com/film/persona/" target="_blank" class="hover:text-heading transition-colors duration-200">Persona (1966)</a></li>
-                        <li><a href="https://letterboxd.com/film/boyz-n-the-hood/" target="_blank" class="hover:text-heading transition-colors duration-200">Boyz n the Hood (1991)</a></li>
-                        <li><a href="https://letterboxd.com/film/amores-perros/" target="_blank" class="hover:text-heading transition-colors duration-200">Amores Perros (2000)</a></li>
-                        <li><a href="https://letterboxd.com/film/blue-velvet/" target="_blank" class="hover:text-heading transition-colors duration-200">Blue Velvet (1986)</a></li>
-                        <li><a href="https://letterboxd.com/film/my-own-private-idaho/" target="_blank" class="hover:text-heading transition-colors duration-200">My Own Private Idaho (1991)</a></li>
-                        <li><a href="https://letterboxd.com/film/a-clockwork-orange/" target="_blank" class="hover:text-heading transition-colors duration-200">A Clockwork Orange (1971)</a></li>
-                        <li><a href="https://letterboxd.com/film/perfect-blue/" target="_blank" class="hover:text-heading transition-colors duration-200">Perfect Blue (1997)</a></li>
-                        <li><a href="https://letterboxd.com/film/one-flew-over-the-cuckoos-nest/" target="_blank" class="hover:text-heading transition-colors duration-200">One Flew Over the Cuckoo’s Nest (1975)</a></li>
-                        <li><a href="https://letterboxd.com/film/ghost-in-the-shell/" target="_blank" class="hover:text-heading transition-colors duration-200">Ghost in the Shell (1995)</a></li>
-                        <li><a href="https://letterboxd.com/film/the-deer-hunter/" target="_blank" class="hover:text-heading transition-colors duration-200">The Deer Hunter (1978)</a></li>
-                        <li><a href="https://letterboxd.com/kabukitwins2007/list/dollar-trilogy/" target="_blank" class="hover:text-heading transition-colors duration-200">Dollars Trilogy</a></li>
-                        <li><a href="https://letterboxd.com/film/full-metal-jacket/" target="_blank" class="hover:text-heading transition-colors duration-200">Full Metal Jacket (1987)</a></li>
-                        <li><a href="https://letterboxd.com/film/the-king-of-comedy/" target="_blank" class="hover:text-heading transition-colors duration-200">The King of Comedy (1982)</a></li>
-                        <li><a href="https://letterboxd.com/film/goodfellas/" target="_blank" class="hover:text-heading transition-colors duration-200">GoodFellas (1990)</a></li>
-                        <li><a href="https://letterboxd.com/film/y-tu-mama-tambien/" target="_blank" class="hover:text-heading transition-colors duration-200">Y Tu Mamá También (2001)</a></li>
-                        <li><a href="https://letterboxd.com/film/masculin-feminin/" target="_blank" class="hover:text-heading transition-colors duration-200">Masculin Féminin (1966)</a></li>
-                        <li><a href="https://letterboxd.com/film/requiem-for-a-dream/" target="_blank" class="hover:text-heading transition-colors duration-200">Requiem for a Dream (2000)</a></li>
-                        <li><a href="https://letterboxd.com/film/la-haine/" target="_blank" class="hover:text-heading transition-colors duration-200">La Haine (1995)</a></li>
-                        <li><a href="https://letterboxd.com/film/das-boot/" target="_blank" class="hover:text-heading transition-colors duration-200">Das Boot (1981)</a></li>
-                        <li><a href="https://letterboxd.com/film/midsommar/" target="_blank" class="hover:text-heading transition-colors duration-200">Midsommar (2019)</a></li>
-                        <li><a href="https://letterboxd.com/film/donnie-darko/" target="_blank" class="hover:text-heading transition-colors duration-200">Donnie Darko (2001)</a></li>
-                        <li><a href="https://letterboxd.com/film/the-machinist/" target="_blank" class="hover:text-heading transition-colors duration-200">The Machinist (2004)</a></li>
-                        <li><a href="https://letterboxd.com/film/midnight-express/" target="_blank" class="hover:text-heading transition-colors duration-200">Midnight Express (1978)</a></li>
-                        <li><a href="https://letterboxd.com/film/dirty-harry/" target="_blank" class="hover:text-heading transition-colors duration-200">Dirty Harry (1971)</a></li>
-                        <li><a href="https://letterboxd.com/film/dog-day-afternoon/" target="_blank" class="hover:text-heading transition-colors duration-200">Dog Day Afternoon (1975)</a></li>
-                        <li><a href="https://letterboxd.com/film/vertigo/" target="_blank" class="hover:text-heading transition-colors duration-200">Vertigo (1958)</a></li>
-                        <li><a href="https://letterboxd.com/film/casablanca/" target="_blank" class="hover:text-heading transition-colors duration-200">Casablanca (1942)</a></li>
-                        <li><a href="https://letterboxd.com/film/the-shining/" target="_blank" class="hover:text-heading transition-colors duration-200">The Shining (1980)</a></li>
-                        <li><a href="https://letterboxd.com/film/paprika-2006/" target="_blank" class="hover:text-heading transition-colors duration-200">Paprika (2006)</a></li>
-                        <li><a href="https://letterboxd.com/film/rocky/" target="_blank" class="hover:text-heading transition-colors duration-200">Rocky (1976)</a></li>
-                        <li><a href="https://letterboxd.com/film/shallow-grave/" target="_blank" class="hover:text-heading transition-colors duration-200">Shallow Grave (1994)</a></li>
-                        <li><a href="https://letterboxd.com/film/after-hours/" target="_blank" class="hover:text-heading transition-colors duration-200">After Hours (1985)</a></li>
-                        <li><a href="https://letterboxd.com/film/scarface-1983/" target="_blank" class="hover:text-heading transition-colors duration-200">Scarface (1983)</a></li>
-                        <li><a href="https://letterboxd.com/film/in-the-mood-for-love/" target="_blank" class="hover:text-heading transition-colors duration-200">In the Mood for Love (2000)</a></li>
-                        <li><a href="https://letterboxd.com/film/happy-together/" target="_blank" class="hover:text-heading transition-colors duration-200">Happy Together (1997)</a></li>
-                        <li><a href="https://letterboxd.com/film/as-tears-go-by/" target="_blank" class="hover:text-heading transition-colors duration-200">As Tears Go By (1988)</a></li>
-                        <li><a href="https://letterboxd.com/film/slumdog-millionaire/" target="_blank" class="hover:text-heading transition-colors duration-200">Slumdog Millionaire (2008)</a></li>
-                        <li><a href="https://letterboxd.com/film/tropic-thunder/" target="_blank" class="hover:text-heading transition-colors duration-200">Tropic Thunder (2008)</a></li>
-                        <li><a href="https://letterboxd.com/film/wall-e/" target="_blank" class="hover:text-heading transition-colors duration-200">WALL·E (2008)</a></li>
-                        <li><a href="https://letterboxd.com/film/zoolander/" target="_blank" class="hover:text-heading transition-colors duration-200">Zoolander (2001)</a></li>
-                        <li><a href="https://letterboxd.com/film/no-country-for-old-men/" target="_blank" class="hover:text-heading transition-colors duration-200">No Country for Old Men (2007)</a></li>
-                        <li><a href="https://letterboxd.com/film/babel/" target="_blank" class="hover:text-heading transition-colors duration-200">Babel (2006)</a></li>
-                        <li><a href="https://letterboxd.com/film/kill-bill-vol-1/" target="_blank" class="hover:text-heading transition-colors duration-200">Kill Bill: Vol. 1 (2003)</a></li>
-                        <li><a href="https://letterboxd.com/film/kill-bill-vol-2/" target="_blank" class="hover:text-heading transition-colors duration-200">Kill Bill: Vol. 2 (2004)</a></li>
-                        <li><a href="https://letterboxd.com/film/kung-fu-hustle/" target="_blank" class="hover:text-heading transition-colors duration-200">Kung Fu Hustle (2004)</a></li>
-                        <li><a href="https://letterboxd.com/film/21-grams/" target="_blank" class="hover:text-heading transition-colors duration-200">21 Grams (2003)</a></li>
-                        <li><a href="https://letterboxd.com/film/tokyo-godfathers/" target="_blank" class="hover:text-heading transition-colors duration-200">Tokyo Godfathers (2003)</a></li>
-                        <li><a href="https://letterboxd.com/film/memories-of-murder/" target="_blank" class="hover:text-heading transition-colors duration-200">Memories of Murder (2003)</a></li>
-                        <li><a href="https://letterboxd.com/film/city-of-god/" target="_blank" class="hover:text-heading transition-colors duration-200">City of God (2002)</a></li>
-                        <li><a href="https://letterboxd.com/film/the-beach/" target="_blank" class="hover:text-heading transition-colors duration-200">The Beach (2000)</a></li>
-                        <li><a href="https://letterboxd.com/film/dogma/" target="_blank" class="hover:text-heading transition-colors duration-200">Dogma (1999)</a></li>
-                        <li><a href="https://letterboxd.com/film/american-history-x/" target="_blank" class="hover:text-heading transition-colors duration-200">American History X (1998)</a></li>
-                        <li><a href="https://letterboxd.com/film/the-doom-generation/" target="_blank" class="hover:text-heading transition-colors duration-200">The Doom Generation (1995)</a></li>
-                        <li><a href="https://letterboxd.com/film/ocean-waves/" target="_blank" class="hover:text-heading transition-colors duration-200">Ocean Waves (1993)</a></li>
-                        <li><a href="https://letterboxd.com/film/reservoir-dogs/" target="_blank" class="hover:text-heading transition-colors duration-200">Reservoir Dogs (1992)</a></li>
-                        <li><a href="https://letterboxd.com/film/thelma-louise/" target="_blank" class="hover:text-heading transition-colors duration-200">Thelma & Louise (1991)</a></li>
-                        <li><a href="https://letterboxd.com/film/back-to-the-future/" target="_blank" class="hover:text-heading transition-colors duration-200">Back to the Future (1985)</a></li>
-                        <li><a href="https://letterboxd.com/film/do-the-right-thing/" target="_blank" class="hover:text-heading transition-colors duration-200">Do the Right Thing (1989)</a></li>
-                        <li><a href="https://letterboxd.com/film/platoon/" target="_blank" class="hover:text-heading transition-colors duration-200">Platoon (1986)</a></li>
-                        <li><a href="https://letterboxd.com/film/the-breakfast-club/" target="_blank" class="hover:text-heading transition-colors duration-200">The Breakfast Club (1985)</a></li>
-                        <li><a href="https://letterboxd.com/film/paris-texas/" target="_blank" class="hover:text-heading transition-colors duration-200">Paris, Texas (1984)</a></li>
-                        <li><a href="https://letterboxd.com/film/serpico/" target="_blank" class="hover:text-heading transition-colors duration-200">Serpico (1973)</a></li>
-                        <li><a href="https://letterboxd.com/film/rebel-without-a-cause/" target="_blank" class="hover:text-heading transition-colors duration-200">Rebel Without a Cause (1955)</a></li>
-                    </ul>
-                </div>
-            </details>
-
-            <!-- Artists Section -->
-            <details class="group bg-surface/30 border border-neutral-800 rounded-lg overflow-hidden transition-colors hover:border-neutral-700">
-                <summary class="flex items-center justify-between p-4 cursor-pointer select-none">
-                    <span class="font-mono text-sm text-heading uppercase tracking-wider">Artists</span>
-                    <i data-lucide="headphones" class="w-4 h-4 text-neutral-500 group-open:text-heading transition-colors"></i>
-                </summary>
-                <div class="p-6 pt-2 border-t border-neutral-800/50">
-                    <ul id="artist-list" class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                        <li><a href="https://open.spotify.com/search/Kendrick%20Lamar" target="_blank" class="hover:text-heading transition-colors duration-200">Kendrick Lamar</a></li>
-                        <li><a href="https://open.spotify.com/search/Dean%20Blunt" target="_blank" class="hover:text-heading transition-colors duration-200">Dean Blunt</a></li>
-                        <li><a href="https://open.spotify.com/search/Tame%20Impala" target="_blank" class="hover:text-heading transition-colors duration-200">Tame Impala</a></li>
-                        <li><a href="https://open.spotify.com/search/Lata%20Mangeshkar" target="_blank" class="hover:text-heading transition-colors duration-200">Lata Mangeshkar</a></li>
-                        <li><a href="https://open.spotify.com/search/Meiko%20Kaji" target="_blank" class="hover:text-heading transition-colors duration-200">Meiko Kaji</a></li>
-                        <li><a href="https://open.spotify.com/search/Massive%20Attack" target="_blank" class="hover:text-heading transition-colors duration-200">Massive Attack</a></li>
-                        <li><a href="https://open.spotify.com/search/Cocteau%20Twins" target="_blank" class="hover:text-heading transition-colors duration-200">Cocteau Twins</a></li>
-                        <li><a href="https://open.spotify.com/search/Beach%20House" target="_blank" class="hover:text-heading transition-colors duration-200">Beach House</a></li>
-                        <li><a href="https://open.spotify.com/search/Mobb%20Deep" target="_blank" class="hover:text-heading transition-colors duration-200">Mobb Deep</a></li>
-                        <li><a href="https://open.spotify.com/search/Kourosh%20Yaghmaei" target="_blank" class="hover:text-heading transition-colors duration-200">Kourosh Yaghmaei</a></li>
-                        <li><a href="https://open.spotify.com/search/Nas" target="_blank" class="hover:text-heading transition-colors duration-200">Nas</a></li>
-                        <li><a href="https://open.spotify.com/search/A%24AP%20Rocky" target="_blank" class="hover:text-heading transition-colors duration-200">A$AP Rocky</a></li>
-                        <li><a href="https://open.spotify.com/search/Frank%20Ocean" target="_blank" class="hover:text-heading transition-colors duration-200">Frank Ocean</a></li>
-                        <li><a href="https://open.spotify.com/search/Young%20Nudy" target="_blank" class="hover:text-heading transition-colors duration-200">Young Nudy</a></li>
-                        <li><a href="https://open.spotify.com/search/Scenic" target="_blank" class="hover:text-heading transition-colors duration-200">Scenic</a></li>
-                        <li><a href="https://open.spotify.com/search/TV%20Girl" target="_blank" class="hover:text-heading transition-colors duration-200">TV Girl</a></li>
-                        <li><a href="https://open.spotify.com/search/Lana%20Del%20Rey" target="_blank" class="hover:text-heading transition-colors duration-200">Lana Del Rey</a></li>
-                        <li><a href="https://open.spotify.com/search/Playboi%20Carti" target="_blank" class="hover:text-heading transition-colors duration-200">Playboi Carti</a></li>
-                        <li><a href="https://open.spotify.com/search/The%20Weeknd" target="_blank" class="hover:text-heading transition-colors duration-200">The Weeknd</a></li>
-                        <li><a href="https://open.spotify.com/search/The%20War%20on%20Drugs" target="_blank" class="hover:text-heading transition-colors duration-200">The War on Drugs</a></li>
-                        <li><a href="https://open.spotify.com/search/Sunbeam%20Sound%20Machine" target="_blank" class="hover:text-heading transition-colors duration-200">Sunbeam Sound Machine</a></li>
-                        <li><a href="https://open.spotify.com/search/Still%20Corners" target="_blank" class="hover:text-heading transition-colors duration-200">Still Corners</a></li>
-                        <li><a href="https://open.spotify.com/search/Lush" target="_blank" class="hover:text-heading transition-colors duration-200">Lush</a></li>
-                        <li><a href="https://open.spotify.com/search/The%20Alchemist" target="_blank" class="hover:text-heading transition-colors duration-200">The Alchemist</a></li>
-                        <li><a href="https://open.spotify.com/search/Sade" target="_blank" class="hover:text-heading transition-colors duration-200">Sade</a></li>
-                        <li><a href="https://open.spotify.com/search/Bj%C3%B6rk" target="_blank" class="hover:text-heading transition-colors duration-200">Björk</a></li>
-                        <li><a href="https://open.spotify.com/search/The%20Smiths" target="_blank" class="hover:text-heading transition-colors duration-200">The Smiths</a></li>
-                        <li><a href="https://open.spotify.com/search/Moby" target="_blank" class="hover:text-heading transition-colors duration-200">Moby</a></li>
-                        <li><a href="https://open.spotify.com/search/Tears%20for%20Fears" target="_blank" class="hover:text-heading transition-colors duration-200">Tears for Fears</a></li>
-                        <li><a href="https://open.spotify.com/search/A.R.%20Rahman" target="_blank" class="hover:text-heading transition-colors duration-200">A.R. Rahman</a></li>
-                        <li><a href="https://open.spotify.com/search/Molchat%20Doma" target="_blank" class="hover:text-heading transition-colors duration-200">Molchat Doma</a></li>
-                        <li><a href="https://open.spotify.com/search/Cannons" target="_blank" class="hover:text-heading transition-colors duration-200">Cannons</a></li>
-                        <li><a href="https://open.spotify.com/search/Baby%20Keem" target="_blank" class="hover:text-heading transition-colors duration-200">Baby Keem</a></li>
-                        <li><a href="https://open.spotify.com/search/Vangelis" target="_blank" class="hover:text-heading transition-colors duration-200">Vangelis</a></li>
-                        <li><a href="https://open.spotify.com/search/Giorgio%20Moroder" target="_blank" class="hover:text-heading transition-colors duration-200">Giorgio Moroder</a></li>
-                        <li><a href="https://open.spotify.com/search/Kraftwerk" target="_blank" class="hover:text-heading transition-colors duration-200">Kraftwerk</a></li>
-                        <li><a href="https://open.spotify.com/search/Metro%20Boomin" target="_blank" class="hover:text-heading transition-colors duration-200">Metro Boomin</a></li>
-                        <li><a href="https://open.spotify.com/search/Laxmikant-Pyarelal" target="_blank" class="hover:text-heading transition-colors duration-200">Laxmikant-Pyarelal</a></li>
-                        <li><a href="https://open.spotify.com/search/Pet%20Shop%20Boys" target="_blank" class="hover:text-heading transition-colors duration-200">Pet Shop Boys</a></li>
-                        <li><a href="https://open.spotify.com/search/A%20Flock%20of%20Seagulls" target="_blank" class="hover:text-heading transition-colors duration-200">A Flock of Seagulls</a></li>
-                        <li><a href="https://open.spotify.com/search/David%20Bowie" target="_blank" class="hover:text-heading transition-colors duration-200">David Bowie</a></li>
-                        <li><a href="https://open.spotify.com/search/Annie" target="_blank" class="hover:text-heading transition-colors duration-200">Annie</a></li>
-                        <li><a href="https://open.spotify.com/search/Skepta" target="_blank" class="hover:text-heading transition-colors duration-200">Skepta</a></li>
-                        <li><a href="https://open.spotify.com/search/Frank%20Sinatra" target="_blank" class="hover:text-heading transition-colors duration-200">Frank Sinatra</a></li>
-                        <li><a href="https://open.spotify.com/search/Nancy%20Sinatra" target="_blank" class="hover:text-heading transition-colors duration-200">Nancy Sinatra</a></li>
-                        <li><a href="https://open.spotify.com/search/Eyedress" target="_blank" class="hover:text-heading transition-colors duration-200">Eyedress</a></li>
-                        <li><a href="https://open.spotify.com/search/Chromatics" target="_blank" class="hover:text-heading transition-colors duration-200">Chromatics</a></li>
-                    </ul>
-                </div>
-            </details>
-
-            <!-- Music I Produce Section -->
-            <details class="group bg-surface/30 border border-neutral-800 rounded-lg overflow-hidden transition-colors hover:border-neutral-700" open>
-                <summary class="flex items-center justify-between p-4 cursor-pointer select-none">
-                    <span class="font-mono text-sm text-heading uppercase tracking-wider">Music I Produce</span>
-                    <i data-lucide="mic-2" class="w-4 h-4 text-neutral-500 group-open:text-heading transition-colors"></i>
-                </summary>
-                <div class="p-6 pt-2 border-t border-neutral-800/50 space-y-6">
-                    <!-- SoundCloud Embed -->
-                   
-
-                    <!-- Spotify Embed -->
-                    <div class="rounded-xl overflow-hidden border border-neutral-800 bg-black">
-                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/1fc0TIWSrdIrNPSnlTSWQS?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </details>
-
-        </div>
-
-        <footer class="pt-8 pb-12">
-            <div class="flex flex-col items-center gap-6">
-                <div class="flex gap-8 text-sm font-mono">
-                    <a href="https://i.postimg.cc/3wRb1JZT/image.png" target="_blank" class="flex items-center gap-2 hover:text-heading transition-colors link-hover">
-                        <i data-lucide="mail" class="w-4 h-4"></i> Email
-                    </a>
-                    <a href="https://pastebin.com/raw/6YHrTMbT" target="_blank" class="flex items-center gap-2 hover:text-heading transition-colors link-hover">
-                        <i data-lucide="shield" class="w-4 h-4"></i> Privacy Policy
-                    </a>
-                </div>
-                
-                <span class="font-mono text-xs text-neutral-600">- Dorking</span>
-            </div>
-        </footer>
-
+    <!-- Main Contact -->
+    <main id="main-content" class="flex-grow flex items-center justify-center transition-opacity duration-500">
+        <a href="mailto:admin@dorking.in" class="text-2xl md:text-4xl font-light tracking-tight text-white hover:text-neutral-300 transition">
+            admin@dorking.in
+        </a>
     </main>
 
+    <!-- Privacy Policy Overlay -->
+    <div id="privacy-overlay" class="fixed inset-0 bg-neutral-950 z-50 translate-y-full transition-transform duration-500 ease-in-out overflow-y-auto hide-scroll p-8 md:p-20">
+        <div class="max-w-2xl mx-auto">
+            <div class="flex justify-between items-center mb-12">
+                <h1 class="text-white text-xl font-semibold tracking-tight">Privacy Policy</h1>
+                <button onclick="togglePrivacy()" class="text-white hover:text-neutral-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+            
+            <div class="space-y-8 text-sm leading-relaxed text-neutral-400">
+                <section>
+                    <p>Last updated: March 2026</p>
+                    <p class="mt-4">This policy applies to all applications developed by Dorking.in. We prioritize user privacy and aim to collect the minimum amount of data necessary to provide functional services.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-white mb-2 uppercase tracking-widest text-xs">Data Collection</h2>
+                    <p>Our applications do not collect personal identifiable information (PII) such as names, addresses, or phone numbers unless explicitly provided by the user for support purposes. We may collect non-personal technical data (device model, OS version) to improve app performance.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-white mb-2 uppercase tracking-widest text-xs">Third-Party Services</h2>
+                    <p>Apps may utilize Google Play Services, AdMob, or Firebase Analytics. These third parties may collect information used to identify you according to their respective privacy policies.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-white mb-2 uppercase tracking-widest text-xs">Data Security</h2>
+                    <p>We implement commercially acceptable means of protecting any data transmitted via our apps. However, no method of transmission over the internet is 100% secure.</p>
+                </section>
+
+
+                <section>
+                    <h2 class="text-white mb-2 uppercase tracking-widest text-xs">Contact</h2>
+                    <p>Inquiries regarding these policies should be directed to: <span class="text-white">admin@dorking.in</span></p>
+                </section>
+            </div>
+            <div class="h-20"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center pb-8">
+        <button onclick="togglePrivacy()" class="text-xs uppercase tracking-[0.2em] opacity-50 hover:opacity-100 transition">
+            Privacy Policy
+        </button>
+    </footer>
+
     <script>
-        window.addEventListener('load', () => {
-            if (window.lucide) {
-                lucide.createIcons();
+        function togglePrivacy() {
+            const overlay = document.getElementById('privacy-overlay');
+            const main = document.getElementById('main-content');
+            const isHidden = overlay.classList.contains('translate-y-full');
+            
+            if (isHidden) {
+                overlay.classList.remove('translate-y-full');
+                main.classList.add('opacity-0');
+            } else {
+                overlay.classList.add('translate-y-full');
+                main.classList.remove('opacity-0');
             }
-        });
+        }
     </script>
 </body>
 </html>
